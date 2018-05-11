@@ -10,7 +10,7 @@
 				$check = $this->model->fetch_one("select * from admin where ten_dang_nhap = '$username' and mat_khau = '$password' "); 
 				if (count($check)>0) { 
 				 	$_SESSION["username"]= $username;
-				 	header('location:index.php?controller=home1'); 
+				 	header('location:index.php?controller=home'); 
 
 				}else {
 					header('location:index.php?err=1');

@@ -30,7 +30,7 @@
                 <a href="index.php?controller=home" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>  Trang chủ</a>
                 <a href="index.php?controller=hoadon" class="w3-bar-item w3-button w3-padding"><i class="fa fa-eye fa-fw"></i> Danh sách hóa đơn</a>
                 <a href="index.php?controller=sanpham" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>  Danh sách sản phẩm</a>
-                <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bullseye fa-fw"></i>  Geo</a>
+                <a href="index.php?controller=khachhang" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bullseye fa-fw"></i>  Danh sách khách hàng</a>
                 <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-diamond fa-fw"></i>  Orders</a>
                 <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bell fa-fw"></i>  News</a>
                 <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bank fa-fw"></i>  General</a>

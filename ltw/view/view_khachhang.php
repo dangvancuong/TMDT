@@ -18,8 +18,8 @@
                 <td><?php echo $khachhang['so_dien_thoai']; ?></td>     
                 <td><?php echo $khachhang['mat_khau']; ?></td>     
                 <td><?php echo $khachhang['dia_chi']; ?></td>     
-                <td> <a href="index.php?controller=sanpham_edit_view&id=<?php echo $khachhang['khachhang_ID']; ?>" class="w3-text-blue">Sửa</a></td>
-                <td> <a href="index.php?controller=sanpham_delete&id=<?php echo $khachhang['khachhang_ID']; ?>" class="w3-text-red">xóa</a></td> 
+                <td> <a href="index.php?controller=khachhang_edit_view&id=<?php echo $khachhang['khachhang_ID']; ?>" class="w3-text-blue">Sửa</a></td>
+                <td> <a href="index.php?controller=khachhang_delete&id=<?php echo $khachhang['khachhang_ID']; ?>" class="w3-text-red">xóa</a></td> 
             </tr> 
         <?php } ?> 
         

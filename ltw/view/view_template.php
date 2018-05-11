@@ -29,7 +29,7 @@
                 <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
                 <a href="index.php?controller=home" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>  Trang chủ</a>
                 <a href="index.php?controller=hoadon" class="w3-bar-item w3-button w3-padding"><i class="fa fa-eye fa-fw"></i> Danh sách hóa đơn</a>
-                <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>  Traffic</a>
+                <a href="index.php?controller=sanpham" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>  Danh sách sản phẩm</a>
                 <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bullseye fa-fw"></i>  Geo</a>
                 <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-diamond fa-fw"></i>  Orders</a>
                 <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bell fa-fw"></i>  News</a>

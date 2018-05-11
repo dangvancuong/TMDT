@@ -3,9 +3,9 @@
 		public function __construct(){
 			parent:: __construct();
 
-			$list_sanpham = $this->model->fetch("select * from sanpham");
-			$total_record = $this->model->num_rows("select * from sanpham"); 
-			include "view/view_sanpham.php";
+			$list_admin = $this->model->fetch("select * from admin");
+			$total_record = $this->model->num_rows("select * from admin"); 
+			include "view/view_home.php";
 		}
 	}
 	new controller_home();

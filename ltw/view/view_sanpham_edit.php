@@ -14,7 +14,7 @@
 			<input class="w3-block w3-border w3-sand" style="padding: 3px;" name="gia_san_pham" type="number" min= "0" value="<?php echo $list_sanpham['gia_san_pham']; ?>">
 		</p> 
 		<p>
-			<button class="w3-btn w3-green">THÊM</button>
+			<button class="w3-btn w3-green">Sửa</button>
 		</p>
 	</form>
     <br> 

@@ -5,7 +5,8 @@
 
 			$list_sanpham = $this->model->fetch("select * from sanpham");
 			$total_record = $this->model->num_rows("select * from sanpham"); 
-			include "view/view_sanpham.php";
+			include 'view/view_sanpham_search.php';	
+			// include "view/view_sanpham.php";
 		}
 	}
 	new controller_sanpham();

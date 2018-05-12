@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th5 10, 2018 lúc 03:03 PM
+-- Thời gian đã tạo: Th5 12, 2018 lúc 02:59 AM
 -- Phiên bản máy phục vụ: 10.1.26-MariaDB
 -- Phiên bản PHP: 7.1.9
 
@@ -55,6 +55,15 @@ CREATE TABLE `hoadon` (
   `thoi_gian_tao` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+--
+-- Đang đổ dữ liệu cho bảng `hoadon`
+--
+
+INSERT INTO `hoadon` (`hoadon_ID`, `khachhang_ID`, `thoi_gian_tao`) VALUES
+(1, 1, '2018-05-11 15:12:57'),
+(2, 2, '2018-05-11 15:17:51'),
+(3, 1, '2018-05-11 15:32:23');
+
 -- --------------------------------------------------------
 
 --
@@ -67,6 +76,20 @@ CREATE TABLE `hoadon_sanpham` (
   `gia_san_pham` int(11) NOT NULL,
   `so_luong` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Đang đổ dữ liệu cho bảng `hoadon_sanpham`
+--
+
+INSERT INTO `hoadon_sanpham` (`hoadon_ID`, `sanpham_ID`, `gia_san_pham`, `so_luong`) VALUES
+(1, 1, 1000, 5),
+(1, 2, 200, 2),
+(1, 5, 1000, 2),
+(2, 1, 1000, 10),
+(2, 2, 200, 3),
+(3, 1, 1000, 2),
+(3, 2, 200, 11),
+(3, 5, 200, 2);
 
 -- --------------------------------------------------------
 
@@ -81,6 +104,14 @@ CREATE TABLE `khachhang` (
   `mat_khau` varchar(32) COLLATE utf8_unicode_ci NOT NULL,
   `dia_chi` varchar(50) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Đang đổ dữ liệu cho bảng `khachhang`
+--
+
+INSERT INTO `khachhang` (`khachhang_ID`, `ho_ten`, `so_dien_thoai`, `mat_khau`, `dia_chi`) VALUES
+(1, 'Hiền', '0123659999', '123123', 'Hà Nội, Việt Nam'),
+(2, 'Nguyễn Văn Hiền', '0123456789', '123123', 'số 10, đường nguyễn văn trỗi');
 
 -- --------------------------------------------------------
 
@@ -103,7 +134,8 @@ INSERT INTO `sanpham` (`sanpham_ID`, `ten_san_pham`, `gia_san_pham`) VALUES
 (2, 'iphone 5s', 200),
 (5, 'Điện thoại 3s', 1000),
 (6, 'Điện thoại 3s', 1000),
-(7, 'Điện thoại 1200', 2000);
+(7, 'Điện thoại 1200', 2000),
+(8, 'Điện thoại 3s3s', 100);
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -155,19 +187,19 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT cho bảng `hoadon`
 --
 ALTER TABLE `hoadon`
-  MODIFY `hoadon_ID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `hoadon_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT cho bảng `khachhang`
 --
 ALTER TABLE `khachhang`
-  MODIFY `khachhang_ID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `khachhang_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT cho bảng `sanpham`
 --
 ALTER TABLE `sanpham`
-  MODIFY `sanpham_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `sanpham_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- Các ràng buộc cho các bảng đã đổ
